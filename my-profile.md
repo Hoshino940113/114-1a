@@ -21,4 +21,6 @@
  | 仁德國中 | 中學 | 
  | 南大附中 | 綜合高中 |
 
-``` print("Hello , the world") ```
+```
+print("Hello , the world")
+```
