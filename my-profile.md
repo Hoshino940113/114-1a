@@ -11,4 +11,10 @@
 *ㄝ不是*
 
 [Youtube](https://www.youtube.com/)
-![youtube](圖片URL)
+![youtube](YouTube.png)
+
+>Look before you leap.
+
+ | 學歷 | 階段 |  |---|:---:| | 德南國小 | 小學  | 仁德國中 | 中學  | 南大附中 | 綜合高中 |
+
+```print("Hello , the world")
