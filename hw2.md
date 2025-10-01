@@ -1,4 +1,4 @@
-```
+```Mermaid
 graph TD
     %% 設定關鍵路徑任務的樣式 (紅色粗框)
     classDef critical fill:#ffe0e0,stroke:#ff3333,stroke-width:2px;
