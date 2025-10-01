@@ -1,33 +1,19 @@
 ```Mermaid
-graph TD
-    %% 設定關鍵路徑任務的樣式 (紅色粗框)
-    classDef critical fill:#ffe0e0,stroke:#ff3333,stroke-width:2px;
-    
-    %% 節點定義: 任務ID[說明 (D天)]
-    A[1. 研擬計畫 (1天)]
-    B[2. 任務分配 (4天)]
-    C[3. 取得硬體 (17天)]
-    D[4. 程式開發 (70天)]
-    E[5. 安裝硬體 (10天)]
-    F[6. 程式測試 (30天)]
-    G[7. 撰寫手冊 (25天)]
-    H[8. 轉換檔案 (20天)]
-    I[9. 系統測試 (25天)]
-    J[10. 使用者訓練 (20天)]
-    K[11. 使用者測試 (25天)]
+gantt
+    title 專案排程甘特圖 (總工期: 155 天)
+    dateFormat x
+    axisFormat %s
 
-    %% 任務依賴關係
-    A --> B
-    A --> C
-    B --> D
-    C --> E
-    D --> F
-    E --> G
-    E --> H
-    F --> I
-    G & H --> J
-    I & J --> K
-
-    %% 標記關鍵路徑上的任務
-    class A,B,D,F,I,K critical
+    section 專案實施
+    研擬計畫      :crit, 1, 0, 1
+    任務分配      :crit, 2, after 1, 4
+    取得硬體      :3, after 1, 17
+    程式開發      :crit, 4, after 2, 70
+    安裝硬體      :5, after 3, 10
+    程式測試      :crit, 6, after 4, 30
+    撰寫使用手冊  :7, after 5, 25
+    轉換檔案      :8, after 5, 20
+    系統測試      :crit, 9, after 6, 25
+    使用者訓練    :10, after 7, 20
+    使用者測試    :crit, 11, after 9, 25
 ```
